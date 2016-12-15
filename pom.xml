@@ -1,0 +1,46 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>NortonCommander</groupId>
+    <artifactId>NortonCommander</artifactId>
+    <version>0.9</version>
+    <packaging>jar</packaging>
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.fxml</include>
+                    <include>**/*.png</include>
+                </includes>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>commons-net</groupId>
+                <artifactId>commons-net</artifactId>
+                <version>3.5</version>
+                <configuration>
+                    <additionalClasspathElements>
+                        <additionalClasspathElement>${project.basedir}/src/main/resources/repo/commons-net/commons-net/3.5/commons-net-3.5.jar</additionalClasspathElement>
+                    </additionalClasspathElements>
+                </configuration>
+
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/commons-net/commons-net -->
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>3.5</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/repo/commons-net/commons-net/3.5/commons-net-3.5.jar</systemPath>
+        </dependency>
+
+    </dependencies>
+</project>
