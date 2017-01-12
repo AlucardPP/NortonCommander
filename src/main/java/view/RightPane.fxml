@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RightPaneController">
+   <children>
+      <ComboBox fx:id="rightDiskChoseBox" layoutX="14.0" layoutY="14.0" prefHeight="31.0" prefWidth="83.0" />
+      <TextField fx:id="rightSearchField" layoutX="107.0" layoutY="14.0" />
+      <ListView fx:id="rightFileShowList" layoutX="14.0" layoutY="54.0" prefHeight="292.0" prefWidth="326.0" />
+      <ComboBox fx:id="rightSortBox" layoutX="14.0" layoutY="357.0" prefHeight="31.0" prefWidth="241.0" />
+      <ToggleButton fx:id="rightChoseSortButton" layoutX="274.0" layoutY="355.0" mnemonicParsing="false" />
+      <Button fx:id="rightParentButton" layoutX="300.0" layoutY="14.0" mnemonicParsing="false" text="up" />
+   </children>
+</AnchorPane>

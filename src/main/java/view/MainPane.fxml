@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainPaneController">
+   <children>
+      <fx:include fx:id="menuPane" source="MenuPane.fxml" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <fx:include fx:id="leftPane" source="LeftPane.fxml" />
+            <fx:include fx:id="centerPane" source="CenterPane.fxml" />
+            <fx:include fx:id="rightPane" source="RightPane.fxml" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

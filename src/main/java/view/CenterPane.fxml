@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CenterPaneController">
+   <children>
+      <Button fx:id="copyButton" mnemonicParsing="false" text="&lt;Copy&gt;">
+         <VBox.margin>
+            <Insets top="55.0" />
+         </VBox.margin></Button>
+      <Button fx:id="moveButton" mnemonicParsing="false" text="&lt;Move&gt;" />
+      <Button fx:id="uploadButton" mnemonicParsing="false" text="&lt;Upload&gt;" />
+      <Button fx:id="downloadButton" mnemonicParsing="false" text="&lt;Download&gt;" />
+   </children>
+</VBox>
