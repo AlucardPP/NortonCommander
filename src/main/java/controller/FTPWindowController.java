@@ -104,8 +104,10 @@ public class FTPWindowController implements Initializable {
 	public void setStage(ListView<File> rightList, Button rightUpButton, ListView<File> leftListView) {
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(resource));
+			//TODO zbędne castowanie
 			Parent root = (Parent) loader.load();
 			FTPWindowController ftpWindowController = loader.getController();
+			//TODO to się robi już niezdrowe, znów qrwa klasa anonimowa ?
 			ftpWindowController.getConnectButton().setOnAction(new EventHandler<ActionEvent>() {
 				@Override
 				public void handle(ActionEvent event) {

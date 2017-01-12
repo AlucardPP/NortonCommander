@@ -62,6 +62,8 @@ public class RightPaneController implements Initializable {
 		this.rightFileShowList = rightFileShowList;
 	}
 
+
+	//TODO -człowieku litości!
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		rightSearchField.setPromptText("Search");

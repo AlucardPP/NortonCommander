@@ -38,6 +38,7 @@ public class ShowFile {
 		list.getItems().addAll(files);
 	}
 
+	//Rozwiązanie woła o pomstę do nieba!
 	public static void moveToParentDirectory(ListView<File> list) {
 		ObservableList<File> observableList = list.getItems();
 		try {
@@ -63,7 +64,7 @@ public class ShowFile {
 
 
 
-
+//TODO rozbij to !
 	private static class AttachmentListCell extends ListCell<File> {
 		private ImageView exeImageView = new ImageView();
 		private ImageView folderImageView = new ImageView();

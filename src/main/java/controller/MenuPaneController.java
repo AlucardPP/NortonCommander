@@ -29,6 +29,8 @@ public class MenuPaneController implements Initializable {
 	@FXML
 	private MenuItem fileView;
 
+	//TODO unused?
+
 	@FXML
 	private Menu helpMenu;
 
