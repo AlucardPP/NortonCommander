@@ -63,7 +63,7 @@ public class RightPaneController implements Initializable {
 	}
 
 
-	//TODO -człowieku litości!
+	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		rightSearchField.setPromptText("Search");
