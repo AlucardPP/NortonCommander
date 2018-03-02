@@ -5,7 +5,7 @@ import java.util.Comparator;
 
 public class SortByLastEdit implements Comparator<File> {
 
-	//TODO powinien być to enum a nie boolean ;)
+	
 	private boolean order;
 
 	public SortByLastEdit(boolean order) {
