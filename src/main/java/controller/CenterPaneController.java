@@ -184,13 +184,13 @@ public class CenterPaneController implements Initializable {
 	public void refreshList(ListView<File> leftList, ListView<File> rightList) {
 		ObservableList<File> right = rightList.getItems();
 		ObservableList<File> left = leftList.getItems();
-		//TODO dodać linię
+		
 		String leftFile = leftList.getItems().get(left.size() - 1).getParent();
 		String rightFile = rightList.getItems().get(right.size() - 1).getParent();
-		//TODO dodać linię
+		
 		File[] leftFiles = new File(leftFile).listFiles();
 		File[] rightFiles = new File(rightFile).listFiles();
-		//TODO dodać linię
+	
 		show.showFileList(leftList, leftFiles);
 		show.showFileList(rightList, rightFiles);
 
@@ -227,10 +227,10 @@ public class CenterPaneController implements Initializable {
 				try {
 					String localFilePath = leftList.getSelectionModel().getSelectedItem().toString();
 					File file = new File(localFilePath);
-					//TODO - nie wykorzystywane
+					
 					String localParentDir = file.getParent();
 					String remoteDirPath = ftpClient.printWorkingDirectory();
-					//TODO znów klasa anonimowa ?
+					
 					Platform.runLater(new Runnable() {
 						@Override
 						public void run() {
