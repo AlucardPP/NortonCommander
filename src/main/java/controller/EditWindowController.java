@@ -30,7 +30,7 @@ public class EditWindowController implements Initializable {
 	@FXML
 	private Button cancelButton;
 
-	//TODO unused variable
+	
 	@FXML
 	private AnchorPane editAnchorPane;
 
@@ -58,7 +58,7 @@ public class EditWindowController implements Initializable {
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		//TODO masz serio hopla w na punkcie klas anonimowych ;)
+		
 		cancelButton.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
@@ -74,7 +74,7 @@ public class EditWindowController implements Initializable {
 	public void createStage(String path) {
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(resource));
-			//TODO zbędne kastowanie ;)
+			
 			Parent root = (Parent) loader.load();
 			EditWindowController editWindowController = loader.getController();
 			editWindowController.showEditableFile(path, editWindowController.getShowArea(),
@@ -133,10 +133,10 @@ public class EditWindowController implements Initializable {
 
 	public void saveFile(String path, TextArea textArea) {
 		File file = new File(path);
-		//TODO zbędny średnik na końcu
+		
 		try (FileWriter fw = new FileWriter(file); BufferedWriter bw = new BufferedWriter(fw);) {
 			bw.write(textArea.getText());
-// TODO znów nic z błędem nie robisz - po co go łapać ?
+
 		} catch (FileNotFoundException ex) {
 			System.err.println(ex);
 		} catch (IOException e) {
