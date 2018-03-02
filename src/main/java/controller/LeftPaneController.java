@@ -46,7 +46,7 @@ public class LeftPaneController implements Initializable {
 	@FXML
 	private TextField leftSearchField;
 
-	//TODO gettery i settery przeważnie są na samym końcu
+	
 	public ListView<File> getLeftFileShowList() {
 		return leftFileShowList;
 	}
@@ -55,7 +55,7 @@ public class LeftPaneController implements Initializable {
 		this.leftFileShowList = leftFileShowList;
 	}
 
-	//TODO litości królu złoty rozbij to !
+	
 	public void initialize(URL location, ResourceBundle resources) {
 		leftSearchField.setPromptText("Search");
 		leftChoseSortButton.setGraphic(SortFiles.leftToggleSelected);
@@ -77,7 +77,7 @@ public class LeftPaneController implements Initializable {
 				event.consume();
 			}
 		});
-		//TODO tobie to qrwa płacą od linijki kodu chyba - bo qrwa duplikat goni duplikat
+		
 		leftFileShowList.setOnMouseClicked(new EventHandler<MouseEvent>() {
 			public void handle(MouseEvent event) {
 				if (event.getClickCount() == mouse_clicker) {
@@ -115,7 +115,7 @@ public class LeftPaneController implements Initializable {
 
 			}
 		});
-		//TODO ale mam wątpliwości - chyba jednak qrwa płacą Ci od klasy anonimowej !
+		
 		leftSortBox.setOnAction(new EventHandler<ActionEvent>() {
 			public void handle(ActionEvent event) {
 				boolean order = leftChoseSortButton.isSelected();
