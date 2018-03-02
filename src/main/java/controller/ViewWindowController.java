@@ -35,7 +35,7 @@ public class ViewWindowController implements Initializable {
 	@FXML
 	private TextArea viewText;
 
-//TODO to się nadaje tylko na kfiotki w kodzie!
+
 
 	public TextArea getViewText() {
 		return viewText;
