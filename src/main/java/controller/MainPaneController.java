@@ -30,7 +30,7 @@ public class MainPaneController implements Initializable {
 	@FXML
 	private RightPaneController rightPaneController;
 
-	//TODO w konkursie na najbardziej zjebaną metodę to byś chyba wygrał. Jak widzę takie takie coś to w uszach brzmi "welkom maj frient"
+	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		ListView<File> leftListView = leftPaneController.getLeftFileShowList();
