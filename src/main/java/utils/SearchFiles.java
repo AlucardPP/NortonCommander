@@ -8,7 +8,7 @@ import javafx.scene.control.ListView;
 
 
 public class SearchFiles {
-	//TODO musimy wejść głębiej - 4 wcięcia to za mało! A teraz poważnie - do podziału!
+	
 	public static void search(String path, String fileToSearch, ListView<File> list) {
 		File file = new File(path);
 		if (file.isDirectory()) {
