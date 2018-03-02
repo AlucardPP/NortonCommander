@@ -14,7 +14,7 @@ import org.apache.commons.net.ftp.FTPFile;
 import javafx.scene.control.ListView;
 
 public class DownloadFile {
-//TODO podzielić na mniejsze!
+
 	public void download(ListView<File> list, String path, FTPClient client) throws IOException {
 
 		FTPFile[] files = client.listFiles();
@@ -29,7 +29,7 @@ public class DownloadFile {
 				outputStream = new BufferedOutputStream(new FileOutputStream(dest));
 				inputStream = client.retrieveFileStream(pathToFile);
 				byte[] bytesArray = new byte[4096];
-				//TODO magic number ?
+				
 				int bytesRead = -1;
 				while ((bytesRead = inputStream.read(bytesArray)) != -1) {
 					outputStream.write(bytesArray, 0, bytesRead);
