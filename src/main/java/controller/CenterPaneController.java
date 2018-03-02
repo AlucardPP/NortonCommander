@@ -64,14 +64,14 @@ public class CenterPaneController implements Initializable {
 	}
 
 
-	// TODO czy wykorzystujesz gdzieś tego settera ?
+	
 	public void setUploadButton(Button uploadButton) {
 		this.uploadButton = uploadButton;
 	}
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		// TODO Auto-generated method stub
+		
 
 	}
 
@@ -85,7 +85,7 @@ public class CenterPaneController implements Initializable {
 				ObservableList<File> leftList = leftListView.getItems();
 				if (leftListView.getSelectionModel().isSelected(leftIndex)) {
 
-					//TODO duplikacja kodu - po ki chuj?
+					
 					File fileToCopy = leftListView.getSelectionModel().getSelectedItem();
 					String name = fileToCopy.getName();
 					File directory = new File(rightList.get(rightList.size() - 1).getParent().toString());
@@ -180,7 +180,7 @@ public class CenterPaneController implements Initializable {
 		});
 
 	}
-//TODO nie jest wymagane ale między kolejnymi krokami robi się wolną linię + da się zrobić jedną metodę z tego która działa w obie strony
+
 	public void refreshList(ListView<File> leftList, ListView<File> rightList) {
 		ObservableList<File> right = rightList.getItems();
 		ObservableList<File> left = leftList.getItems();
@@ -203,7 +203,7 @@ public class CenterPaneController implements Initializable {
 				@Override
 				public void handle(ActionEvent event) {
 					String saveDir = oldValue.toString();
-					// TODO Ty i te twoje zboczenie do klas anonimowych - wywal to!
+					
 					Platform.runLater(new Runnable() {
 						@Override
 						public void run() {
@@ -241,7 +241,7 @@ public class CenterPaneController implements Initializable {
 							}
 						}
 					});
-//TODO nie łap wyjatku by tlko go łapać - trzeba go obsłużyć - komunikat błędu dla usera albo co ? a tak i tak poleci na konsolkę błąd jak go nie złapiesz
+
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
