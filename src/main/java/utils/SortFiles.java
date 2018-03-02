@@ -13,7 +13,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 public class SortFiles {
-	//TODO popracuj nad formatowaniem kodu plizz
+	
 
 	ShowFile show = new ShowFile();
 	final Image unseleted = new Image(getClass().getResourceAsStream("/view/icon-arrow-up-b-32.png"));
